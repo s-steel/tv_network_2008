@@ -11,15 +11,14 @@ class Show
     characters.each do |character|
       total += character.salary
     end
-    total 
+    total
   end
 
   def highest_paid_actor
-    characters.find do |char|
-      char.salary.max
+    high_salary = characters.max_by do |char|
+      char.salary
     end
+    high_salary.actor
   end
-
-
 
 end
