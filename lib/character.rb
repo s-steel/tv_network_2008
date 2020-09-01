@@ -4,7 +4,7 @@ class Character
     @name = name
     @actor = actor
     @salary = salary
-  end 
+  end
 
 
 end
